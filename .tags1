@@ -22,16 +22,23 @@ getName	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			string getName(){ret
 setHeight	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			void setHeight(int cm){ height = cm; }$/;"	function	line:142	class:Animal	signature:(int cm)
 setWeight	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			void setWeight(int km){ weight = km; }$/;"	function	line:143	class:Animal	signature:(int km)
 setName	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			void setName(int animalName){ name = animalName; }$/;"	function	line:144	class:Animal	signature:(int animalName)
-getNumOfAnimals	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			static int getNumOfAnimals(){$/;"	function	line:152	class:Animal	signature:()
-numOfAnimals	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int Animal::numOfAnimals = 0;$/;"	member	line:159	class:Animal	file:
-Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Animal::Animal(int height, int weight, string name){$/;"	function	line:160	class:Animal	signature:(int height, int weight, string name)
-~Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Animal::~Animal(){$/;"	function	line:166	class:Animal	signature:()
-Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Animal::Animal(){$/;"	function	line:170	class:Animal	signature:()
-toString	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^void Animal::toString(){$/;"	function	line:174	class:Animal	signature:()
-Dog	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^class Dog : public Animal{$/;"	class	line:182	file:
-sound	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	string sound = "Woof";$/;"	member	line:184	class:Dog	file:
-getSound	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	void getSound() {std::cout << sound << '\\n';}$/;"	function	line:187	class:Dog	signature:()
-Dog	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	Dog() : Animal(){};$/;"	function	line:189	class:Dog	signature:()
-Dog	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Dog::Dog(int height, int weight, string name, string bark) : Animal(height, weight, name){$/;"	function	line:193	class:Dog	signature:(int height, int weight, string name, string bark)
-toString	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^void Dog::toString(){$/;"	function	line:196	class:Dog	signature:()
-main	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int main(){$/;"	function	line:203	signature:()
+getFamily	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			void getFamily(){ cout << "We are animals" << endl; }$/;"	function	line:146	class:Animal	signature:()
+getClass	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^		 	virtual void getClass(){ cout << "I'm an Animal " << endl; }$/;"	function	line:147	class:Animal	signature:()
+getNumOfAnimals	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			static int getNumOfAnimals(){$/;"	function	line:156	class:Animal	signature:()
+numOfAnimals	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int Animal::numOfAnimals = 0;$/;"	member	line:163	class:Animal	file:
+Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Animal::Animal(int height, int weight, string name){$/;"	function	line:164	class:Animal	signature:(int height, int weight, string name)
+~Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Animal::~Animal(){$/;"	function	line:170	class:Animal	signature:()
+Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Animal::Animal(){$/;"	function	line:174	class:Animal	signature:()
+toString	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^void Animal::toString(){$/;"	function	line:178	class:Animal	signature:()
+Dog	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^class Dog : public Animal{$/;"	class	line:186	file:
+sound	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	string sound = "Woof";$/;"	member	line:188	class:Dog	file:
+getSound	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	void getSound() {std::cout << sound << '\\n';}$/;"	function	line:191	class:Dog	signature:()
+getClass	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	void getClass(){ cout << "I'm a dog" << endl; }$/;"	function	line:192	class:Dog	signature:()
+Dog	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	Dog() : Animal(){};$/;"	function	line:195	class:Dog	signature:()
+Dog	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Dog::Dog(int height, int weight, string name, string bark) : Animal(height, weight, name){$/;"	function	line:199	class:Dog	signature:(int height, int weight, string name, string bark)
+toString	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^void Dog::toString(){$/;"	function	line:202	class:Dog	signature:()
+GermanShepard	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^class GermanShepard : public Dog{$/;"	class	line:209	file:
+getClass	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^		void getClass(){ std::cout << "I'm a German Shepard" << '\\n';}$/;"	function	line:211	class:GermanShepard	signature:()
+getDerived	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^		void getDerived(){ std::cout << "I'm a Animal and Dog" << '\\n';}$/;"	function	line:212	class:GermanShepard	signature:()
+whatClassAreYou	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int whatClassAreYou(Animal* animal) {$/;"	function	line:217	signature:(Animal* animal)
+main	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int main(){$/;"	function	line:223	signature:()

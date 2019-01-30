@@ -143,6 +143,10 @@ class Animal{
 			void setWeight(int km){ weight = km; }
 			void setName(int animalName){ name = animalName; }
 
+			void getFamily(){ cout << "We are animals" << endl; }
+		 	virtual void getClass(){ cout << "I'm an Animal " << endl; }
+
+
 			// void setAll(int, int , string );
 			Animal(int, int , string );
 
@@ -185,6 +189,8 @@ private:
 
 public:
 	void getSound() {std::cout << sound << '\n';}
+	void getClass(){ cout << "I'm a dog" << endl; }
+
 	Dog(int, int, string, string);
 	Dog() : Animal(){};
 	void toString();
@@ -199,6 +205,20 @@ void Dog::toString(){
 	<< this->sound <<  '\n';
 }
 
+
+class GermanShepard : public Dog{
+public:
+		void getClass(){ std::cout << "I'm a German Shepard" << '\n';}
+		void getDerived(){ std::cout << "I'm a Animal and Dog" << '\n';}
+};
+
+
+
+int whatClassAreYou(Animal* animal) {
+	/* code */
+	animal->getClass();
+	return 0;
+}
 
 int main(){
 
@@ -251,15 +271,34 @@ int main(){
 	// actYourAge(ageRef);
 	// std::cout << "myAge : " << myAge << '\n';
 
-	Animal fred(33, 10, "Fred");
-	Animal tom(36, 15, "Tom");
-	Dog spot(38, 16, "Spot", "Woof");
+	// Animal fred(33, 10, "Fred");
+	// Animal tom(36, 15, "Tom");
+	// Dog spot(38, 16, "Spot", "Woof");
+	//
+	//
+	// fred.toString();
+	// tom.toString();
+	// spot.toString();
+	// spot.getSound();
 
+	Animal *animal = new Animal;
+	Dog *dog = new Dog;
 
-	fred.toString();
-	tom.toString();
-	spot.toString();
-	spot.getSound();
+	// animal->getClass();
+	// dog->getClass();
+
+	// whatClassAreYou(animal);
+	// whatClassAreYou(dog);
+
+	Dog spot;
+	GermanShepard max;
+	Animal* ptrDog = &spot;
+	Animal* ptrGShepard = &max;
+	ptrDog->getFamily();
+	ptrDog->getClass();
+	ptrGShepard->getFamily();
+	ptrGShepard->getClass();
+
 
 	return 0;
 }
