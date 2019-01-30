@@ -1,0 +1,31 @@
+guessNumber	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int guessNumber() {$/;"	function	line:10	signature:()
+happyBirthday	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int happyBirthday() {$/;"	function	line:28	signature:()
+vectorOutput	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int vectorOutput() {$/;"	function	line:39	signature:()
+saveStringToFile	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int saveStringToFile() {$/;"	function	line:58	signature:()
+pointerOnCPP	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int pointerOnCPP() {$/;"	function	line:98	signature:()
+makeMeYoung	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int makeMeYoung(int* age) {$/;"	function	line:111	signature:(int* age)
+actYourAge	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int actYourAge(int& ageRef) {$/;"	function	line:119	signature:(int& ageRef)
+Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^class Animal{$/;"	class	line:128	file:
+height	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			int height;$/;"	member	line:131	class:Animal	file:
+weight	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			int weight;$/;"	member	line:132	class:Animal	file:
+name	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			string name;$/;"	member	line:133	class:Animal	file:
+numOfAnimals	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			static int numOfAnimals;$/;"	member	line:136	class:Animal	file:
+getHeight	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			int getHeight(){return height;}$/;"	function	line:139	class:Animal	signature:()
+getWeight	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			int getWeight(){return weight;}$/;"	function	line:140	class:Animal	signature:()
+getName	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			string getName(){return name;}$/;"	function	line:141	class:Animal	signature:()
+setHeight	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			void setHeight(int cm){ height = cm; }$/;"	function	line:142	class:Animal	signature:(int cm)
+setWeight	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			void setWeight(int km){ weight = km; }$/;"	function	line:143	class:Animal	signature:(int km)
+setName	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			void setName(int animalName){ name = animalName; }$/;"	function	line:144	class:Animal	signature:(int animalName)
+getNumOfAnimals	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^			static int getNumOfAnimals(){$/;"	function	line:152	class:Animal	signature:()
+numOfAnimals	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int Animal::numOfAnimals = 0;$/;"	member	line:159	class:Animal	file:
+Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Animal::Animal(int height, int weight, string name){$/;"	function	line:160	class:Animal	signature:(int height, int weight, string name)
+~Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Animal::~Animal(){$/;"	function	line:166	class:Animal	signature:()
+Animal	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Animal::Animal(){$/;"	function	line:170	class:Animal	signature:()
+toString	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^void Animal::toString(){$/;"	function	line:174	class:Animal	signature:()
+Dog	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^class Dog : public Animal{$/;"	class	line:182	file:
+sound	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	string sound = "Woof";$/;"	member	line:184	class:Dog	file:
+getSound	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	void getSound() {std::cout << sound << '\\n';}$/;"	function	line:187	class:Dog	signature:()
+Dog	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^	Dog() : Animal(){};$/;"	function	line:189	class:Dog	signature:()
+Dog	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^Dog::Dog(int height, int weight, string name, string bark) : Animal(height, weight, name){$/;"	function	line:193	class:Dog	signature:(int height, int weight, string name, string bark)
+toString	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^void Dog::toString(){$/;"	function	line:196	class:Dog	signature:()
+main	/Library/WebServer/Documents/C/cppTut/ctut.cpp	/^int main(){$/;"	function	line:203	signature:()
